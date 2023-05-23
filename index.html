@@ -11,8 +11,31 @@
     <!--인터넷 익스플로러에서 Edge 처럼 보이게 해줘-->
     <title>NAVER</title>
     <!--Tab에 나타나는 제목-->
+    <style>
+        #wrap {
+            text-align: center;
+            /* 문자 가운데 정렬*/
+            display: inline-block;
+            /* div 특성상 display가 block */
+        }
+        #wrap-center {
+            width: 1280px;
+            /* 너비 : 1280px*/
+            height: 261px;
+            background-color: yellow;
+            /* 배경색 : 노란색*/
+        }
+    </style>
 </head>
 <body>
-    <div>안녕하세요</div>
+    <div id="wrap">
+    <!--wrap의 크기 : 1280 x 261-->
+        <div id="wrap-center"></div>
+        <!--가운데 정렬을 할 부분-->
+            <div id="header"></div>
+            <div id="search"></div>
+            <div id="nav"></div>
+            <div id="main"></div>
+    </div>
 </body>
 </html>
