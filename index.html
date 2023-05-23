@@ -12,30 +12,50 @@
     <title>NAVER</title>
     <!--Tab에 나타나는 제목-->
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
         #wrap {
             text-align: center;
             /* 문자 가운데 정렬*/
-            display: inline-block;
-            /* div 특성상 display가 block */
         }
         #wrap-center {
             width: 1280px;
             /* 너비 : 1280px*/
-            height: 261px;
+            display: inline-block;
+            /* div 특성상 display가 block */
             background-color: yellow;
             /* 배경색 : 노란색*/
+        }
+        #header-hamburger {
+            margin-top: 18px;
+            /*margin 위 : 18px*/
+            background-color: blue;
+            width: 46px;
+            height: 46px;
+        }
+        #main {
+            height: 261px;
+            /* 높이 : 261px*/
         }
     </style>
 </head>
 <body>
     <div id="wrap">
     <!--wrap의 크기 : 1280 x 261-->
-        <div id="wrap-center"></div>
+        <div id="wrap-center">
         <!--가운데 정렬을 할 부분-->
-            <div id="header"></div>
+            <div id="header">
+                <div id="hamburger">
+
+                </div>
+            </div>
             <div id="search"></div>
             <div id="nav"></div>
             <div id="main"></div>
+        </div>
     </div>
 </body>
 </html>
