@@ -207,7 +207,7 @@
             </div>
             <style>
                 #search > form {
-                    display: inline-block;
+                    display: inline-flex;
                     width: 708px;
                     height: 60px;
                     border: 1px solid #03c75a;
@@ -216,11 +216,12 @@
                 }
 
                 #search-svg {
-                    display: inline-block;
+                    display: inline-flex;
                     width: 68px;
-                    height: 100%;
                     margin-right: 12px;
                     padding-left: 10px;
+                    align-items: center;
+                    justify-content: center;
                 }
                 #search-svg svg {
                     width: 24px;
@@ -237,8 +238,18 @@
                     outline: none;
                 }
                 #search-right {
-                    display: inline-block;
+                    flex: 1;
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: flex-end;
                 }
+                #search-keyboard, #search-recent, #search-button {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
                 #search-keyboard::before {
                     content: "";
                     display: block;
@@ -261,7 +272,15 @@
                     width: 10px;
                     height: 6px;
                 }
-                #search-button::before {
+                #search-button {
+                    padding: 17px 27px 16px 10px;
+                }
+                #search-button > div {
+                    background: #03c75a;
+                    width: 25px;
+                    height: 25px;
+                }
+                #search-button > div::before {
                     content:'';
                     display: inline-block;
                     background-image: url(./sp_main.png);
