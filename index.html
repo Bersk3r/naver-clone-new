@@ -80,6 +80,9 @@
         }
 
         html, body, form {
+            font-size: 10.5px;
+            line-height: 10.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -217,14 +220,28 @@
                 #search > form:hover {
                     box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
                 }
-
                 #search-svg {
                     display: inline-flex;
                     width: 68px;
                     margin-right: 12px;
+
                     padding-left: 10px;
                     align-items: center;
                     justify-content: center;
+                    position: relative;
+                }
+                #search-svg::after {
+                    display: none;
+                }
+                #search > form:focus-within #search-svg::after {
+                    content:'';
+                    position: absolute;
+                    right: 0;
+                    width: 1px;
+                    height:20px;
+                    display: inline-block;
+                    background-color: #e4e4e4;
+                    top: 20px;
                 }
                 #search-svg svg {
                     width: 24px;
@@ -234,7 +251,7 @@
                 #search-input {
                     width: 480px;
                     padding: 17px 0;
-                    font-size: 1.3rem;
+                    font-size: 2rem;
                     line-height: 24px;
                     font-weight: bold;
                     border: none;
@@ -325,7 +342,87 @@
                     </div>
                 </form>
             </div>
-            <div id="nav"></div>
+            <style>
+                #nav > ul {
+
+                }
+                #nav li:nth-of-type(1) {
+
+                }
+                #nav li:nth-of-type(2) {
+
+                }
+            </style>
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>메일</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>카페</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>블로그</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>메일</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>쇼핑</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>뉴스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>증권</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>부동산</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>지도</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span>웹툰</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div></div>
+                            <span class="blind">더보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div id="main"></div>
         </div>
     </div>
