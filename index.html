@@ -344,10 +344,24 @@
             </div>
             <style>
                 #nav > ul {
-
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: center;
+                    font-size: 1.4rem;
+                    line-height: 20px;
+                }
+                #nav a {
+                    text-decoration: none;
+                }
+                #nav a:visited {
+                    color: black;
+                }
+                #nav li {
+                    width: 64px;
+                    margin-left: 4px;
                 }
                 #nav li:nth-of-type(1) {
-
+                    margin-left: 0;
                 }
                 #nav li:nth-of-type(2) {
 
@@ -371,12 +385,6 @@
                         <a href="">
                             <div></div>
                             <span>블로그</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div></div>
-                            <span>메일</span>
                         </a>
                     </li>
                     <li>
