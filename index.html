@@ -595,9 +595,7 @@
                     background-color: var(--color_dot_divider);
                     margin: 4px 12px 0;
                 }
-                #main-newstand {
-                    height: 426px;
-                }
+                /*뉴스 스탠드 영역*/
                 #main-shopping {
                     height: 560px;
                 }
@@ -618,15 +616,107 @@
                 .main-weather-and-stock> div {
                     border-top: 1px solid var(--color_border_in);
                 }
-                #main-weather {
+                #main-newstand {
+                    height: 426px;
+                    display: flex;
+                    flex-flow: column;
                 }
-                #main-stock {
+                #main-newstand-top {
+                    flex: 1;
+                    padding: 18px 20px;
+                }
+                #main-newstand header {
+                    font-size: 1.6rem;
+                    color:rgba(8,8,8,.5);
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                #main-newstand header .bold {
+                    font-weight: bold;
+                    color: black;
+                }
+                #main-newstand-gray {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                #main-newstand a {
+                    text-decoration: none;
+                }
+                #main-newstand a:visited {
+                    color: inherit;
+                }
+                #main-newstand a:hover {
+                    text-decoration: underline;
+                }
+                #main-newstand footer {
+                    border-top: 1px solid var(--color_border_in);
+                    padding: 10px 0 11px;
                 }
             </style>
             <main id="main">
                 <div id="main-left">
                     <aside id="main-left-ad"></aside>
-                    <section id="main-newstand"></section>
+                    <section id="main-newstand">
+                        <div id="main-newstand-top">
+                            <header>
+                                <a href="#" class="bold">뉴스스탠드</a>
+                                <a href="#">언론사편집</a>
+                                <a href="#">엔터</a>
+                                <a href="#">스포츠</a>
+                                <a href="#">경제</a>
+                            </header>
+                            <div id="main-newstand-gray">
+                                <div>
+                                    <a href="#">전체언론사</a>
+                                    <a href="#">연합뉴스</a>
+                                    <a href="#">제로초는 미남이지만 사람보다 애완동물인 레오초를 사랑하고 있어 레오초에게 많은 애정을 쏟고 있어 화제가 되어 현재 제로초 인스타그램 레오초 사진으로 도배되었다</a>
+                                </div>
+                                <div>
+                                    <a href="#">뉴스스탠드</a>
+                                    <a href="#">뉴스홈</a>
+                                </div>
+                            </div>
+                            <div id="main-newstand-grid">
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                            </div>
+                        </div>
+                        <footer>
+                            <button><span class="blind">이전</span></button>
+                            <div>언론사더보기 1페이지 전체/4</div>
+                            <button><span class="blind">다음</span></button>
+                            <button><span class="blind">목록보기</span></button>
+                            <button><span class="blind">격자보기</span></button>
+                        </footer>
+                    </section>
                     <section id="main-shopping"></section>
                 </div>
                 <div id="main-right">
