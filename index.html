@@ -625,6 +625,37 @@
                     flex: 1;
                     padding: 18px 20px;
                 }
+                #main-newstand-top .dot::before {
+                    content: '';
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    margin: 9px 7px 0;
+                    border-radius: 50%;
+                    vertical-align: 5px;
+                }
+                #main-newstand-top .slash, #main-newstand-top .dot {
+                    color:rgba(8,8,8,.5);
+                    font-weight: 800;
+                }
+                #main-newstand-top .slash {
+                    position: relative;
+                    padding-left: 26px;
+                }
+                #main-newstand-top .slash::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 4px;
+                    left: 13px;
+                    width: 1px;
+                    height: 15px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    transform: skewX(-15deg);
+                }
                 #main-newstand header {
                     font-size: 1.6rem;
                     color:rgba(8,8,8,.5);
@@ -644,6 +675,87 @@
                     padding: 12px 20px;
                     background-color: var(--color_option_bg);
                     border-radius: 4px;
+                    font-size: 1.4rem;
+                    line-height: 26px;
+                }
+                #main-newstand-gray .left {
+                    flex: 1;
+                    display: flex;
+                }
+                #main-newstand-gray .left > a:first-of-type {
+                    width: 85.5px;
+                }
+                #main-newstand-gray .left > a:first-of-type::after {
+                    content: '';
+                    background-image: url(./sp_main.png);
+                    background-size: 422px 405px;
+                    background-position: -412px -353px;
+                    background-repeat: no-repeat;
+                    width: 9px;
+                    height: 6px;
+                    display: inline-block;
+                    margin: 10px 0 0 5px;
+                    vertical-align: 3px;
+                }
+                #main-newstand-gray .right {
+                }
+                #main-newstand-animation {
+                    padding-left: 25px;
+                    position: relative;
+                    display: flex;
+                }
+                #main-newstand-animation::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    left: 12px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    width: 1px;
+                    height: 12px;
+                }
+                #main-newstand-animation a:first-of-type {
+                    position: relative;
+                    top: -1px;
+                    line-height: 26px;
+                }
+                #main-newstand-animation a:first-of-type::after {
+                    content: "";
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    margin: 12px 6px 0 6px;
+                    border-radius: 50%;
+                    vertical-align: 5px;
+                }
+                #main-newstand-animation a:last-of-type {
+                    text-overflow: ellipsis;
+                    width: 400px;
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                #main-newstand-gray .right {
+                    display: flex;
+                }
+                #main-newstand-gray .bold {
+                    font-weight: bold;
+                    padding-left: 25px;
+                    position: relative;
+                }
+                #main-newstand-gray .bold::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    left: 12px;
+                    width: 1px;
+                    height: 12px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
                 }
                 #main-newstand a {
                     text-decoration: none;
@@ -678,6 +790,92 @@
                 #main-newstand footer {
                     border-top: 1px solid var(--color_border_in);
                     padding: 10px 0 11px;
+                    font-size: 1.3rem;
+                    line-height: 35px;
+                    font-weight: 600;
+                    color: #606060;
+                    color: var(--color_caption2);
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                }
+                #main-newstand footer .list, #main-newstand footer .grid {
+                    position: absolute;
+                    border: none;
+                    cursor: pointer;
+                    top: 0;
+                    background-color: transparent;
+                }
+                #main-newstand footer .list {
+                    right: 49px;
+                    padding: 18px 9px 18px 20px;
+                }
+                #main-newstand footer .list::before {
+                    content: '';
+                    display: inline-block;
+                    background: url(./sp_main.png);
+                    background-size: 422px 405px;
+                    background-position: -107px -368px;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }
+                #main-newstand footer .list:hover::before {
+                    background-position: -86px -368px;
+                }
+                #main-newstand footer .grid {
+                    right: 0;
+                    padding: 18px 20px 18px 9px;
+                }
+                #main-newstand footer .grid:before {
+                    content: '';
+                    display: inline-block;
+                    background: url(./sp_main.png);
+                    background-size: 422px 405px;
+                    background-position: -359px -368px;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                }
+                #main-newstand footer .prev, #main-newstand footer .next  {
+                    background: none;
+                    border: none;
+                    content: '';
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid #dadcdf;
+                    border: 1px solid var(--color_button_border);
+                    background-color: #fff;
+                    background-color: var(--color_button1_bg);
+                    display: inline-block;
+                    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #main-newstand footer .prev::before {
+                    transform: rotate(180deg);
+                }
+                #main-newstand footer .prev::before, #main-newstand footer .next::before {
+                    content: "";
+                    background-image: url(https://web.archive.org/web/20230529053157im_/https://pm.pstatic.net/resources/asset/sp_main.30918f90.png);
+                    background-size: 422px 405px;
+                    background-position: -412px 0px;
+                    background-repeat: no-repeat;
+                    width: 10px;
+                    height: 12px;
+                }
+                #main-newstand footer .text {
+                    padding: 0 16px;
+                    width: 156px;
+                }
+                #main-newstand footer .news {
+                    color: var(--color_news);
+                }
+                #main-newstand footer .total {
+                    color: rgba(96,96,96,.5);
                 }
             </style>
             <main id="main">
@@ -687,20 +885,22 @@
                         <div id="main-newstand-top">
                             <header>
                                 <a href="#" class="bold">뉴스스탠드</a>
-                                <a href="#">언론사편집</a>
-                                <a href="#">엔터</a>
-                                <a href="#">스포츠</a>
-                                <a href="#">경제</a>
+                                <a href="#" class="dot">언론사편집</a>
+                                <a href="#" class="slash">엔터</a>
+                                <a href="#" class="slash">스포츠</a>
+                                <a href="#" class="slash">경제</a>
                             </header>
                             <div id="main-newstand-gray">
-                                <div>
+                                <div class="left">
                                     <a href="#">전체언론사</a>
-                                    <a href="#">연합뉴스</a>
-                                    <a href="#">제로초는 미남이지만 사람보다 애완동물인 레오초를 사랑하고 있어 레오초에게 많은 애정을 쏟고 있어 화제가 되어 현재 제로초 인스타그램 레오초 사진으로 도배되었다</a>
+                                    <div id="main-newstand-animation">
+                                        <a href="#">연합뉴스</a>
+                                        <a href="#">제로초는 미남이지만 사람보다 애완동물인 레오초를 사랑하고 있어 레오초에게 많은 애정을 쏟고 있어 화제가 되어 현재 제로초 인스타그램 레오초 사진으로 도배되었다</a>
+                                    </div>
                                 </div>
-                                <div>
+                                <div class="right">
                                     <a href="#">뉴스스탠드</a>
-                                    <a href="#">뉴스홈</a>
+                                    <a href="#" class="bold">뉴스홈</a>
                                 </div>
                             </div>
                             <div id="main-newstand-grid">
@@ -731,11 +931,11 @@
                             </div>
                         </div>
                         <footer>
-                            <button><span class="blind">이전</span></button>
-                            <div>언론사더보기 1페이지 전체/4</div>
-                            <button><span class="blind">다음</span></button>
-                            <button><span class="blind">목록보기</span></button>
-                            <button><span class="blind">격자보기</span></button>
+                            <button class="prev"><span class="blind">이전 페이지</span></button>
+                            <div class="text"><span class="news">언론사</span>&nbsp;더보기&nbsp;1<span class="total">/4</span></div>
+                            <button class="next"><span class="blind">다음 페이지</span></button>
+                            <button class="list"><span class="blind">목록보기</span></button>
+                            <button class="grid"><span class="blind">격자보기</span></button>
                         </footer>
                     </section>
                     <section id="main-shopping"></section>
